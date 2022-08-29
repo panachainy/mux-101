@@ -1,0 +1,16 @@
+{
+  "name": "test-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@mux/mux-node": "^6.3.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
