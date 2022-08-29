@@ -14,6 +14,7 @@ const { Video } = new Mux(
 const asset = await Video.Assets.create({
   input: "https://muxed.s3.amazonaws.com/leds.mp4",
   playback_policy: "public",
+  test: true,
 });
 
 console.log("res", { asset, id: asset.id });
