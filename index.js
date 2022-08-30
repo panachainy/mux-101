@@ -1,5 +1,6 @@
 import "dotenv/config";
 import Mux from "@mux/mux-node";
+import * as util from "util";
 
 console.log("env", {
   1: process.env.MUX_TOKEN_ID,
@@ -17,4 +18,7 @@ const asset = await Video.Assets.create({
   test: true,
 });
 
-console.log("res", { asset, id: asset.id });
+console.log(
+  "res",
+  util.inspect({ asset, id: asset.id }, false, null, true /* enable colors */)
+);
